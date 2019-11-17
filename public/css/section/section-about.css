@@ -1,0 +1,38 @@
+
+.section-about {
+    background-color: #eee;
+}
+
+.section-about .row {
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+
+.section-about .row p {
+    margin-top: 15px;
+    font-size: 15px;
+    text-align: center;
+    color: rgba(142,55,0);
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.section-about .row i .code {
+    position: absolute;
+    left: 49%;
+    transform: translate(-50%);
+}
+
+.section-about .row i p:hover {
+    color: grey;
+}
+
+.section-about .row i {
+    color: lightsteelblue;
+}
+
+.section-about .row i:hover {
+    color: burlywood;
+}

@@ -1,0 +1,29 @@
+
+.section-footer {
+    margin-top: 15px;
+}
+
+.section-footer .footer-main {
+    background-color: black;
+    height: 8vh;
+}
+
+.section-footer .footer-main p {
+    position: relative;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%);
+    color: lightsteelblue;
+    text-align: center;
+}
+
+.section-footer .footer-main i {
+    float: right;
+    color: lightsteelblue;
+    margin-left: 25px;
+    margin-right: 15px;
+}
+
+.section-footer .footer-main i:hover {
+    color: red;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .content01 {
+        padding: 50px;
+        background-color: #FFFFFF;
+        }
+        .content02 {
+        padding: 50px;
+        background-color: #f7f7f7;
+        }
+        .title {
+        margin: 0 auto;
+        width: 980px;
+        }
+        .title + table {
+        margin-top: 10px;
+        }
+
+        /* table01 */
+        .table01 {
+        margin: auto;
+        table-leyout: fixed;
+        width: 980px;
+        }
+        .table01 th, .table01 td {
+        vertical-align: middle;
+        }
+        .topHead {
+            border-top: #be1309 4px solid;
+        }
+        .topDetail {
+            border-top: #b3b3b3 4px solid;
+        }
+        .table01 th {
+            border-bottom: #e3e3e3 1px solid;
+            border-left: #e3e3e3 1px solid;
+            text-align: left;
+            background: #f7f7f7;
+            padding: 10px;
+            font-weight: normal;
+        width: 250px;
+        }
+        .table01 td {
+            border-bottom: #e3e3e3 1px solid;
+            border-right: #e3e3e3 1px solid;
+            text-align: left;
+            padding: 10px;
+        }
+
+        /* table02 */
+        .table02 {  
+        width: 980px;
+        margin: 0 auto;
+        }
+
+        .table02 td, .table02 th {  
+            border: 1px solid transparent;
+            padding: 10px;
+            vertical-align: middle;
+        }
+
+        .table02 th {  
+            background: #DFDFDF; 
+            font-weight: bold;
+        }
+
+        .table02 td {  
+            background: #FAFAFA;
+            text-align: center;
+        }
+
+        .table02 tr:nth-child(even) td { 
+        background: #F1F1F1;
+        }   
+            
+        .table02 tr:nth-child(odd) td {
+        background: #FEFEFE;
+        }  
+
+        .table02 tr td:hover { 
+        background: #666; color: #FFF;
+        }  
+
+    </style>
+</head>
+<body>
+    <div class="content01">
+        <table class="table01">
+            <tbody>
+                <tr>
+                    <th>NAME</th>
+                    <th>AGE</th>
+                    <th>PHONE</th>
+                    <th>PLACE</th>
+                    <th>CONTACT</th>
+                </tr>
+                <% for(var i=0; i < ppl.length; i++) { %>
+                <tr>
+                    <td><%= ppl[i].name %></td>
+                    <td><%= ppl[i].age %></td>
+                    <td><%= ppl[i].phone %></td>
+                    <td><%= ppl[i].place %></td>
+                    <% if(ppl[i].isContact == Boolean('false')) { %>
+                    <td><button>Edit</button></td>
+                    <% } %>
+                </tr>
+                <% } %>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

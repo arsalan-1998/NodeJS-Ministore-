@@ -1,0 +1,11 @@
+
+@import url('reset.css');
+@import 'clearfix.css'; 
+@import 'navbar/navbar.css';
+@import 'header/section-header.css';
+@import 'section/section-store.css';
+@import 'section/section-about.css';
+@import 'section/section-footer.css';
+@import 'section/dashboard.css';
+@import 'section/section-user-detail.css';
+@import 'section/form.css';

@@ -1,0 +1,82 @@
+
+body {
+    font-size: 55%;
+}
+
+.nav-black {
+    height: 6vh;
+}
+
+.navbar .nav-brand .nav-brand-name {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.93rem;
+    font-family: anurati;
+    color: transparent;
+    width: 9.375rem;
+    height: 1.75rem;
+    background-image: linear-gradient(45deg, rgba(255,124,0,0.8),60% ,rgb(255, 255, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    position: absolute;
+    letter-spacing: 0.09rem;
+    left: 20rem;
+    top: 0.6rem;
+    right: 15%;
+    bottom: 0;
+    animation: moveInTop 2s ease-in-out;
+}
+
+.navbar .login .form a {
+    cursor: pointer;
+    position: absolute;
+    top: 4.68rem;
+    left: 0;
+    text-align: center;
+    border-radius: 0.93rem;
+    width: 100%;
+    background-color: lightgrey;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar .login .form a:hover {
+    background-color: red;
+    color: white;
+}
+
+.navbar .nav-menu {
+    display: none;
+}
+
+.navbar .dash {
+    width: 5rem;
+    height: 0.125rem;
+    padding: 0.125rem;
+    background-color: purple;
+    z-index: 5;
+    position: absolute;
+    top: -13%;
+    transform: translate(50%);
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+ 
+d1
+
+.navbar .menu-mobile {
+    display: block;
+    width: 8rem;
+    height: 50%;
+    padding: 2rem;
+    background-color: red;
+    position: absolute;
+    top: 6.3%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}

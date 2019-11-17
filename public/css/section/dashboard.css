@@ -1,0 +1,88 @@
+
+.user-info {
+    position: absolute;
+    top: 1%;
+    right: 5%;
+    z-index: 3;
+    border: 3px solid #eee;
+    border-radius: 18px;
+    box-shadow: 0 0 5px 6px darkgrey;
+    background-color: grey;
+    width: 40px;
+    height: 40px;
+    clip-path: circle(50%);
+    cursor: pointer;
+}
+
+.user-info i {
+    position: absolute;
+    top: 25%;
+    right: 8%;
+    transform: translate(-50%);
+}
+
+.user-info:active {
+    background-color: white;
+}
+
+.user-icon {
+    position: absolute;
+    top: 1%;
+    right: 5%;
+    border-radius: 35px;
+    background-color: #ccc;
+    width: 120px;
+    height: 40px;
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+}
+
+.user-icon span {
+    display: block;
+    text-decoration: none;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    transform: translate(-50%);
+    font-size: 12px;
+    font-family: kanit;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+}
+
+.user-option {
+    color: white;
+}
+
+.user-detail {
+    background-color: lightgrey;
+    width: 150px;
+    height: auto;
+    position: absolute;
+    top: 9%;
+    right: 6%;
+    border-radius: 5px;
+}
+
+.user-detail a {
+    padding: 5px;
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    font-family: kanit;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+}
+
+.user-detail a:hover {
+    background-color: grey;
+    cursor: pointer;
+}
+
+.user-detail a:active {
+    background-color: #fff;
+}

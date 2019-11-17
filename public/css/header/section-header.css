@@ -1,0 +1,46 @@
+
+@import url('../animation/animation.css');
+
+
+.section-header {
+    height: 20vh;
+    background-color: #ccc;
+}
+
+.section-header .heading {
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section-header .heading span {
+    display: block;
+    line-height: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    animation: moveInLeft 3s ease-in-out;
+}
+
+.section-header .heading-primary {
+    font-family: anurati;
+    background-image: linear-gradient(45deg, rgba(255,124,0,0.8),60% ,rgb(255, 255, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 5px;
+    font-size: 28px;
+    font-weight: 600;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.section-header .heading-primary:hover {
+    transform: scale(2);
+}
+
+.section-header .heading-secondary {
+    font-size: 10px;
+    letter-spacing: 6px;
+    font-weight: 300;
+}

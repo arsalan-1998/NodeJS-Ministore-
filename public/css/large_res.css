@@ -1,0 +1,315 @@
+
+body {
+    font-size: 65%;
+}
+
+
+@import url('../animation/animation.css');
+
+.nav-black {
+    height: 6vh;
+    background-color: black;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.navbar .nav-brand .nav-brand-name {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.93rem;
+    font-family: anurati;
+    color: transparent;
+    width: 9.375rem;
+    height: 1.75rem;
+    background-image: linear-gradient(45deg, rgba(255,124,0,0.8),60% ,rgb(255, 255, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    position: absolute;
+    letter-spacing: 0.09rem;
+    left: 0.5rem;
+    top: 0.6rem;
+    right: 0;
+    bottom: 0;
+    animation: moveInTop 2s ease-in-out;
+}
+
+.navbar .nav-brand .nav-brand-name:hover {
+    color: lightgoldenrodyellow;
+}
+
+.navbar .nav-brand .nav-brand-name:active {
+    transform: translateY(3px) skewX(5deg);
+}
+
+.navbar .cart-count {
+    background-color: rgb(128, 118, 118);
+    position: absolute;
+    z-index: 3;
+    width: 1.125rem;
+    height: 3rem;
+    right: 4.3%;
+    top: -1.6%;
+    clip-path: circle(20%);
+    cursor: pointer;
+}
+
+.navbar .cart-count-val {
+    text-align: center;
+    color: white;
+    margin-top: 1.18rem;
+    font-size: 0.6rem;
+}
+
+.navbar .nav-menu {
+    position: fixed;
+    display: flex;
+    list-style: none;
+    z-index: 10;
+    animation: moveInRight 2s ease-in-out;
+}
+
+.navbar .nav-menu li a {
+    text-decoration: none;
+    color: silver;
+    text-transform: uppercase;
+    letter-spacing: 0.06rem;
+    padding: 1.125rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar .nav-menu li a:not(:nth-child()) {
+    margin-right: 1.5rem;
+}
+
+.navbar .nav-menu li a:hover {
+    background-color: red;
+}
+
+.navbar .nav-menu li:active {
+    transform: translateY(1px);
+}
+
+.navbar .nav-icons i {
+    padding: 0.85rem;
+    color: silver;
+    background-color: red;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar .nav-icons i:nth-child(1) {
+    position: absolute;
+    right: 1.125rem;
+    top: 0.06rem;
+    margin-right: 2.5rem;
+}
+
+.navbar .nav-icons i:nth-child(2) {
+    position: absolute;
+    right: -0.375rem;
+    top: 0.06rem;
+    margin-right: 1.25rem;
+}
+
+.navbar .nav-icons i:hover {
+    background-color: lightgrey;
+    color: white;
+}
+
+.navbar .nav-icons i:active {
+    transform: translateY(1px);
+}
+
+.cart-main {
+    display: none;
+    position: absolute;
+    right: 3.6rem;
+    top: 2.63rem;
+    width: 25rem;
+    height: 18.75rem;
+    background-color: grey;
+    outline: 0.06rem solid lightgrey;
+    outline-offset: -0.18rem;
+    z-index: 2;
+    overflow: hidden;
+    overflow-y: visible;
+    scroll-behavior: smooth;
+}
+
+.cart-main .cart-plus-btn {
+    margin-left: 0.93rem;
+    background-color: lightgrey;
+    padding: 0.125rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cart-main .cart-minus-btn {
+    background-color: lightgrey;
+    padding: 0.125rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cart-main .cart-quantity {
+    width: 2.8rem;
+    border: none;
+    background-color: lightgrey;
+    text-align: center;
+    border-radius: 0.93rem;
+}
+
+.cart-add-trigger div {
+    display: inline;
+    position: relative;
+    top: -1.87rem;
+    left: 4.68rem;
+    line-height: 1.25rem;
+}
+
+.cart-items-added span {
+    display: block;
+}
+
+.cart-main .set-image {
+    position: relative;
+    top: 0.93rem;
+    left: 0.93rem;
+    width: 2.81rem;
+    height: 3.125rem;
+    outline: 0.125rem solid lightgrey;
+}
+
+.cart-test .cart-total {
+    position: absolute;
+    top: 2.5%;
+    right: 18%;
+}
+
+.cart-test .cart-total .total-tag {
+    color: white; 
+    font-size: 1rem;
+    font-family: lobster;
+    position: relative;
+    top: 13%;
+    left: 40%;
+    letter-spacing: 0.125rem;
+}
+
+.cart-test .cart-total .total-val {
+    position: absolute;
+    top: 13%;
+    right: -75%;
+    transform: translate(88%);
+    border-radius: 0.93rem;
+    width: 5.31rem;
+    text-align: center;
+    color: white;
+    background-color: red;
+}
+
+.cart-test .cart-total i {
+    position: absolute;
+    right: -210%;
+    top: 15%;
+    color: white;
+}
+
+.navbar .login {
+    display: none;
+    position: absolute;
+    right: 0.81rem;
+    top: 2.63rem;
+    width: 25rem;
+    height: 18.75rem;
+    background-color: grey;
+    outline: 0.06rem solid lightgrey;
+    outline-offset: -0.1875rem;
+    z-index: 2;
+}
+
+.navbar .login .form {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.navbar .login .form .form-input {
+    width: 8.43rem;
+    height: 1.56rem;
+    display: block;
+    border: none;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.navbar .login .form .form-btn {
+    position: absolute;
+    background-color: red;
+    text-align: center;
+    margin-top: 0.5rem;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    width: 8.43rem;
+    height: 1.56rem;
+}
+
+.navbar .login .form .form-btn:hover {
+    color: black;
+    background-color: lightgrey;
+}
+
+.navbar .login .form .form-btn:active {
+    transform: translateY(3px);
+}
+
+.navbar .login .form .form-reg {
+    position: absolute;
+    top: 160%;
+    left: 60%;
+    color: white;
+    background-color: red;
+    text-transform: lowercase;
+    width: 6.56rem;
+    height: auto;
+}
+
+.navbar .login .form .form-reg:hover {
+    background-color: lightgrey;
+    color: black;
+}
+
+.navbar .login .form .form-reg:active {
+    transform: translateY(3px);
+}
+ 
+.navbar .login .form .form-pass {
+    margin-top: 0.93rem;
+}
+
+.navbar .login .form a {
+    cursor: pointer;
+    position: absolute;
+    top: 4.68rem;
+    left: 0;
+    text-align: center;
+    border-radius: 0.93rem;
+    width: 100%;
+    background-color: lightgrey;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar .login .form a:hover {
+    background-color: red;
+    color: white;
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/public/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" media="screen and (min-width: 1281px) and (max-width: 1440px)" href="/public/css/large_res.css">
+    <link rel="stylesheet" media="screen and (min-width: 721px) and (max-width: 1280px)" href="/public/css/medium_res.css">
+    <link rel="stylesheet" media="screen and (min-width: 401px) and (max-width: 720px)" href="/public/css/small_res.css">
+    <link rel="stylesheet" media="screen and (max-width: 400px)" href="/public/css/mobile_res.css">
+    <script src="/public/js/app.js"></script>
+    <title>Welcome | Home</title>
+</head>
+<body>
+    <section class="navbar nav-black nav-mobile">
+        <div class="nav-brand">
+            <a class="nav-brand-name">Mini Store</a>
+        </div>
+        <ul class="nav-menu menu-mobile">
+            <span class="dash d1"></span>
+            <span class="dash d2"></span>
+            <span class="dash d3"></span>
+            <li><a href="#" class="nav-menu-items"><i class="fa fa-home fa-lg">&nbsp; Home</i></a></li>
+            <li><a href="#store" class="nav-menu-items"><i class="fa fa-shopping-basket fa-lg">&nbsp; Store</i></a></li>
+            <li><a href="#about" class="nav-menu-items"><i class="fa fa-search fa-lg">&nbsp; About</i></a></li>
+            <li><a href="#contact" class="nav-menu-items"><i class="fa fa-phone fa-lg">&nbsp; Contact</i></a></li>
+            <li><a href="#" onclick="loginShow()" class="nav-menu-items"><i class="fa fa-user fa-lg">&nbsp; Login</i></a></li>
+        </ul>
+        <span class="cart-count">
+            <p class="cart-count-val">0</p>
+        </span>
+        <div class="nav-icons">
+            <i onclick="cartShow()" class="fa fa-shopping-cart fa-lg"></i>
+            <i onclick="loginShow()" class="fa fa-user fa-lg"></i>
+        </div>
+            <div class="cart-test">
+                <div class="cart-main cart-add-trigger cart-mobile">
+                    <!-- <img class="set-image" src="../public/Background.jpg" alt="">
+                    <div class="cart-items-added">
+                        <span class="cart-price">599
+                            <a class="cart-plus-btn">+</a>
+                            <input class="cart-quantity" type="number">
+                            <a class="cart-minus-btn">-</a>
+                        </span>
+                        <span class="cart-desc">This is a demo product.</span>
+                    </div>
+    
+                    <img class="set-image" src="../public/Background.jpg" alt="">
+                    <div class="cart-items-added">
+                        <span class="cart-price">499
+                            <a class="cart-plus-btn">+</a>
+                            <input class="cart-quantity" type="number">
+                            <a class="cart-minus-btn">-</a>
+                        </span>
+                        <span class="cart-desc">This is a demo product.</span> 
+                    </div> -->
+                </div>
+                <div class="cart-total">
+                    <span class="total-tag">total : </span>
+                    <span class="total-val"></span><i class="fa fa-inr fa-fw"></i>
+                </div>
+            </div>
+            
+        <div class="login login-mobile">
+            <form method="post" action="/dashboard" class="form">
+                <input class="form-input form-username" name="log[username]" type="text" placeholder="Username">
+                <input class="form-input form-pass" type="password" name="log[pass]" placeholder="********">
+                <input type="submit" class="form-btn" value="Submit">
+                <a class="form-reg" href="/account/register">Register Now</a>
+            </form> 
+        </div>
+    </section>
+
+    <section class="section-header">
+        <h1 class="heading">
+            <span class="heading-primary">Ministore</span>
+            <span class="heading-secondary">Collection for the new generations</span>
+        </h1>
+    </section>
+
+    <div class="clearfix"></div>
+
+    <section id="store" class="section-store">
+        <div class="row">
+            <div class="grid">
+                <p class="product-main">
+                    <img src="../public/Background.jpg" class="product-image">
+                    <span class="price" value="599"><i class="fa fa-inr">&nbsp; 599</i></span>
+                    <span id='0' onclick="additem(this.id)" class="add-to-cart-btn"><i class="fa fa-shopping-bag">&nbsp; Add to cart</i></span>
+                    <span class="cart-desc" value="This is a demo product.">This is a demo product.</span>                
+                </p>
+                <p class="product-main">
+                    <img src="../public/Background.jpg" class="product-image">
+                    <span class="price" value="499"><i class="fa fa-inr">&nbsp; 499</i></span>
+                    <span id="1" onclick="additem(this.id)" class="add-to-cart-btn"><i class="fa fa-shopping-bag">&nbsp; Add to cart</i></span>
+                    <span class="cart-desc" value="This is a demo product.">This is a demo product.</span>                                
+                </p>
+                <p class="product-main">
+                    <img src="../public/Background.jpg" class="product-image">
+                    <span class="price" value="399"><i class="fa fa-inr">&nbsp; 399</i></span>
+                    <span id="2" onclick="additem(this.id)" class="add-to-cart-btn"><i class="fa fa-shopping-bag">&nbsp; Add to cart</i></span>
+                    <span class="cart-desc" value="This is a demo product.">This is a demo product.</span>                
+                </p>
+                <p class="product-main">
+                    <img src="../public/Background.jpg" class="product-image">
+                    <span class="price" value="1299"><i class="fa fa-inr">&nbsp; 1299</i></span>
+                    <span id="3" onclick="additem(this.id)" class="add-to-cart-btn"><i class="fa fa-shopping-bag">&nbsp; Add to cart</i></span>
+                    <span class="cart-desc" value="This is a demo product.">This is a demo product.</span>                
+                </p>
+                <p class="product-main">
+                    <img src="../public/Background.jpg" class="product-image">
+                    <span class="price" value="1599"><i class="fa fa-inr">&nbsp; 1599</i></span>
+                    <span id="4" onclick="additem(this.id)" class="add-to-cart-btn"><i class="fa fa-shopping-bag">&nbsp; Add to cart</i></span>
+                    <span class="cart-desc" value="This is a demo product.">This is a demo product.</span>                
+                </p>
+                <p class="product-main">
+                    <img src="../public/Background.jpg" class="product-image">
+                    <span class="price" value="799"><i class="fa fa-inr">&nbsp; 799</i></span>
+                    <span id="5" onclick="additem(this.id)" class="add-to-cart-btn"><i class="fa fa-shopping-bag">&nbsp; Add to cart</i></span>
+                    <span class="cart-desc" value="This is a demo product.">This is a demo product.</span>                
+                </p>
+                <p class="product-main">
+                    <img src="../public/Background.jpg" class="product-image">
+                    <span class="price" value="899.99"><i class="fa fa-inr">&nbsp; 899.99</i></span>
+                    <span id="6" onclick="additem(this.id)" class="add-to-cart-btn"><i class="fa fa-shopping-bag">&nbsp; Add to cart</i></span>
+                    <span class="cart-desc" value="This is a demo product.">This is a demo product.</span>                
+                </p>
+                <p class="product-main">
+                    <img src="../public/Background.jpg" class="product-image">
+                    <span class="price" value="999"><i class="fa fa-inr">&nbsp; 999</i></span>
+                    <span id="7" onclick="additem(this.id)" class="add-to-cart-btn"><i class="fa fa-shopping-bag">&nbsp; Add to cart</i></span>
+                    <span class="cart-desc" value="This is a demo product.">This is a demo product.</span>                
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="clearfix"></div>
+
+    <section id="about" class="section-about">
+        <div class="row">
+            <i class="fa fa-user fa-5x">
+                <p>solo</p>
+            </i>
+            <i class="fa fa-sticky-note-o fa-5x">
+                <p class="code">300 Lines of code</p>
+            </i>
+            <i class="fa fa-coffee fa-5x">
+                <p>1 coffees</p>
+            </i>
+        </div>
+    </section>
+
+    <div class="clearfix"></div>
+
+    <section id="contact" class="section-footer">
+        <div class="footer-main">
+            <p>&copy; All rights Reserved De_Codr</p>
+            <i class="fa fa-facebook fa-lg"></i>
+            <i class="fa fa-github fa-lg"></i>
+            <i class="fa fa-twitter fa-lg"></i>
+        </div>
+    </section>
+</body>
+</html>
